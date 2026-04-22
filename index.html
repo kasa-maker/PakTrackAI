@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistan Post Tracker - Track Your Parcel</title>
+    <meta name="description" content="AI-powered Pakistan Post parcel tracking. Track your shipments in real-time with instant updates." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+
+      <!-- Header -->
+      <div class="chat-header">
+        <div class="avatar bot">PP</div>
+        <div class="header-info">
+          <h2>Pakistan Post Tracker</h2>
+          <p>Track your parcel in real-time</p>
+        </div>
+        <div class="online-status">
+          <div class="online-dot"></div>
+          <span class="online-text">Online</span>
+        </div>
+      </div>
+
+      <!-- Messages Area -->
+      <div class="chat-messages" id="chatMessages">
+
+        <!-- Welcome message -->
+        <div class="message bot">
+          <div class="avatar bot">PP</div>
+          <div class="bubble welcome-message">
+            <strong>Assalam o Alaikum! 👋</strong><br /><br />
+            Welcome to Pakistan Post Tracker. I can help you track your parcel in real-time.<br /><br />
+            <strong>How to use:</strong><br />
+            • Enter your tracking number (e.g., B2533044)<br />
+            • Get instant location & delivery updates<br /><br />
+            <strong style="color: #667eea;">🧪 Demo Mode:</strong> Try IDs from <code>B25330</code> to <code>B2533049</code>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Input Area -->
+      <div class="chat-input">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Enter tracking number..."
+          autocomplete="off"
+        />
+        <button id="sendBtn" aria-label="Send">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="tracker.js"></script>
+    <script src="groq.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
