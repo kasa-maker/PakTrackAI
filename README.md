@@ -20,7 +20,7 @@ A modern, AI-powered parcel tracking chatbot for Pakistan Post. Track your parce
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/pakistan-post-tracker.git
+git clone https://github.com/kasa-maker/PakTrackAI.git
 cd pakistan-post-tracker
 ```
 
